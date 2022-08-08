@@ -128,7 +128,7 @@ class queriesDBService {
     try {
       const count_response = await new Promise((resolve, reject) => {
         const countQuery =
-          "select count(*) as count from my_moviedb.review_table;";
+          "select count(*) as count from my_moviedb.movie_table;";
 
         //const count_row = results.rows[0].count;
 
