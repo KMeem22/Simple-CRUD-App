@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Movie Database</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/Client/CSS/author.css" />
+
+</head>
+
+<header class="rev_site">
+
+    <!---h1 class="rev_title">Author's Review</h1--->
+
+</header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Movie</a></li>
+        <li><a href="author.html">Review</a></li>
+        <li><a href="studio.html">Studios</a></li>
+        <li><a href="actor.html">Actors</a></li>
+        <li><a href="fivequeries.html">SQL Queries</a></li>
+    </ul>
+</nav>
+
+
+<body>
+    <main>
+
+        <h1 class="rev_title">Author's Review</h1>
+        <br><br/>
+
+        <!--- Author of the rating--->
+        <label>Provide your name</label>
+        <input type="text" id="name" placeholder="Name....">
+        <br><br/>
+
+        <label>Movie's name</label>
+        <input type="text" id="mango" placeholder="Movie name....">
+        <br><br/>
+
+        <label>Rate the Movie out of 10</label>
+        <!---- input type="number" id="movie_rating" placeholder="Movie Rating..." ---->
+        <select id="Movie_Rating" name="Rating_of_Movie">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        </select>
+        <br><br><br/>
+
+        
+        <button type="submit" id="Submit_AuthorBtn">Add</button>
+
+
+        <br><br><br/>
+        <h2 id="author">Author's review Table</h2>
+
+        <div>
+            <input placeholder="search by movietitle" id = "search_author_input">
+            <button id="search_author_btn">Search </button>
+        </div>
+
+        <table id="author_table">
+            <thead>
+                <th>ID</th>
+                <th>Author</th>
+                <th>Movietitle</th>
+                <th>Rating</th>
+                <!---th>Author_name</th>
+                <th>Rating_movie</th---->
+                <th>Delete</th>
+                <th>Edit</th>
+            </thead>
+            <tbody></tbody>
+        </table>
+
+        
+
+        <br><br><br/>
+
+        <!--- Update row -->
+        <section hidden id="update_review_row">
+
+        
+            <!---label>Provide your name</label>
+            <input type="text" id="update_name" placeholder="Name....">
+            <button id="up_author">Update</button>
+            <br><br/---->
+
+            <label>Movie's name</label>
+            <input type="text" id="update_movietitle" placeholder="Movietitle....">
+            <br/>
+            <button id="Up0_Submit_AuthorBtn">Update</button>
+            <br><br><br/>
+
+        <label>Rate the Movie out of 10</label>
+         <!---- input type="number" id="movie_rating" placeholder="Movie Rating..." ---->
+         <select id="update_Movie_Rating" name="Rating_of_Movie">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            </select>
+
+            <br/>
+ 
+         <button type="submit" id="Up1_Submit_AuthorBtn">Update</button>
+
+         </section>
+
+
+
+    </main>
+
+
+    <script src="./JS/clientscript2.js"></script>
+
+</body>
+
+</html>

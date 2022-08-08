@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Movie Database</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/Client/CSS/queries.css" />
+</head>
+
+<header>
+
+    <!---h1>Five SQL Queries</h1---->
+
+</header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Movie</a></li>
+        <li><a href="author.html">Review</a></li>
+        <li><a href="studio.html">Studios</a></li>
+        <li><a href="actor.html">Actors</a></li>
+        <li><a href="fivequeries.html">SQL Queries</a></li>
+        
+    </ul>
+</nav>
+
+
+<body>
+
+    <main>
+
+        <h1>SQL Queries</h1>
+        <br><br><br/>
+
+        <h2>Multirelation queries</h2>
+        <br/>
+
+        <p>What are the studios of movies which are the type of adventure?
+
+        <h3>Studios of adventure movies:</h3>
+        </p>
+
+        <table id="multi1_table">
+            
+            <thead>
+               
+                <th>Studios</th>
+                <tbody></tbody>
+            
+            </thead>
+            
+            </table>
+
+
+            <p>What are the names of actors of comedy movies?
+                <h3>Actors of comedy movies:</h3>
+            </p>
+
+            <table id="multi2_table">
+            
+                <thead>   
+                    <th>Actors</th>
+                </thead>
+                <tbody></tbody>
+                
+                </table>
+
+                <br><br/>
+
+                <p>Name of movie acted by Cameron Diaz
+                    <h3>Movie acted by Cameron Diaz:</h3>
+                </p>
+    
+                <table id="multi3_table">
+                
+                    <thead>
+                        <th>Movietitle</th>
+                        <th>Year</th>
+                        <th>Budget</th>
+                        <th>Gross</th>
+                    </thead>
+                    <tbody></tbody>
+                    
+                    </table>
+
+
+            <br><br><br/>
+
+
+            <h2>SQL JOIN</h2>
+            <div>
+                <p> What are the names of directors and actors of the animated movies?
+                <h3>Directors and Actors of animated movies</h3>
+                </p>
+                <table id="join1_table">
+                
+                    <thead>
+                        <tr>
+                        <th>Movietitle</th>
+                        <th>Director</th>
+                        <th>Year</th>
+                        <th>Actor</th>
+                        <th>Gender</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                    
+                    </table>
+
+                <br><br/>
+
+                <p> What are the names of studios, manager of studios, budget, gross profit of the animated movies?
+                    <h3>Names of studios, manager of studios, budget, gross profit of the animated movies</h3>
+                    </p>
+                    <table id="join2_table">
+                    
+                        <thead>
+                            
+                            <th>Movietitle</th>
+                            <th>Year</th>
+                            <th>Budget</th>
+                            <th>Gross</th>
+                            <th>Studios</th>
+                            <th>Managers</th>
+                        
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+    
+                    <br><br/>
+    
+
+            </div>
+
+
+
+
+
+        <h2>Aggregation</h2>
+        <div id="count_r">
+            
+            <p>Counting rows of a table</p>
+
+            <h3>Result: </h3>
+
+        </div>
+        <br><br/>
+
+        <h2>Grouping</h2>
+        <div id="count_r">
+            
+            <p>Name of movies which has achieved gross profit more than $ 40000000</p>
+
+            <table id="group_table">
+                
+                <thead>
+                    <th>Movietitle</th>
+                    <th>Budget</th>
+                    <th>Gross</th>
+                </thead>
+                <tbody></tbody>
+                
+                </table>
+
+        </div>
+
+        <br><br><br/>
+
+        <div id = view>
+            <h2>Create and use a view</h2>
+            <p>Actors of Animated movies</p>
+
+            <table id="create_view_table">
+            
+                <thead>   
+                    <th>Actors</th>
+                </thead>
+                <tbody></tbody>
+                
+                </table>
+
+
+        </div>
+
+
+    </main>
+
+    <script src="./JS/multirelations.js"></script>
+    <script src="./JS/sqljoin.js"></script>
+    <script src="./JS/aggregation.js"></script>
+    <script src="./JS/createviews.js"></script>
+    
+
+</body>
+
+</html>

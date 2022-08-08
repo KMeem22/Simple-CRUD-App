@@ -1,0 +1,121 @@
+main{
+    width: 50%;
+    margin: 50px auto;
+    /*text-align: center;*/
+}
+
+body {
+    margin: 8px auto;
+    width: 100%;
+  }
+  
+  * {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+  }
+/***.rev_site{
+    border: 5px;
+  margin-bottom: 5px;
+  /*padding-right: 5px;*/
+  /***overflow: auto;
+  justify-content: center;
+}****/
+
+.rev_title{
+    padding-right: 5px;
+    font-size: 5ex;
+    color: black;
+    justify-content: center;
+    text-justify:auto;
+}
+
+nav {
+    padding: 2px;
+    margin: 2px;
+    height: 80px;
+  }
+  
+  nav ul {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+  }
+  
+  nav ul li {
+    padding: 10px 20px;
+    font-size: 27px;
+  }
+  
+  nav ul li:hover {
+    background-color: skyblue;
+    transition: 0.9s;
+  }
+
+
+#author_table{
+    margin: 50px auto;
+    justify-content: left;
+    width: 100%;
+    font-size: 22px;
+}
+
+#author_table, th, td{
+    border-collapse: collapse;
+    border: 1px solid #000;
+}
+
+#author_table, th, td{
+    padding: 5px;
+}
+
+.h1{text-align: center;}
+
+label{
+    font-size: 22px;
+   /* font-family:'Courier New', Courier, monospace;*/
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 5px 0;
+    box-sizing: border-box;
+  }
+
+  input[type=number] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 5px 0;
+    box-sizing: border-box;
+  }
+
+  #search_author_input{
+    width: 60%;
+    padding: 8px 16px;
+    margin: 5px 0;
+    box-sizing: border-box;
+  }
+
+  /*.id{
+      margin-left: 50%;
+  }*/
+
+  select{
+    width: 100%;
+    padding: 12px 20px;
+  }
+
+  #Submit_AuthorBtn{
+    border-radius: 8px;
+    padding: 8px 16px;
+  }
+
+  #search_author_btn{
+    border-radius: 8px;
+    padding: 8px 16px;
+  }
+  

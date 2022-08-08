@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Movie Database</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/Client/CSS/actor.css" />
+
+</head>
+
+<header>
+
+    <!---h1>Actors Data</h1---->
+
+</header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Movie</a></li>
+        <li><a href="author.html">Review</a></li>
+        <li><a href="studio.html">Studios</a></li>
+        <li><a href="actor.html">Actors</a></li>
+        <li><a href="fivequeries.html">SQL Queries</a></li>
+        
+    </ul>
+</nav>
+
+
+<body>
+
+    <main>
+
+        <h1 class="act_site">Actors</h1>
+        <br><br/>
+
+        <label>Movie's name</label>
+        <input type="text" id="mp" placeholder="Movie name....">
+        <br><br/>
+
+        <label>Name of your favorite Actor of the Movie</label>
+        <input type="text" id="actor_name" placeholder="Actor Name...">
+        <br><br/>
+
+        <label>Actor's age</label>
+        <input type="text" id="actor_age" placeholder="Actor Age...">
+        <br><br/>
+
+        <label>Actor's Salary in $ k/m</label>
+        <input type="number" id="actor_salary" placeholder="Actor Salary...">
+        <br><br/>
+
+        <label>Gender</label>
+        <!---- input type="text" id="actor's_gender" placeholder="Actor's Gender..."  ---->
+        <select id="actor_gender"  name="Act_gdr">
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="" selected>Select an option</option>
+        </select>
+        <br><br/>
+
+        <button type="submit" id="Submit_Act_Btn">Add</button>
+
+        <br><br><br/>
+
+        <h2 id="actor">Actor Table</h2>
+
+        <div>
+            <input placeholder="search by movietitle" id = "search_actor_input">
+            <button id="search_actor_btn">Search </button>
+        </div>
+
+        <table id="actor_table">
+                <thead>
+                    <th>ID</th>
+                    <th>Movie title</th>
+                    <th>Actor</th>
+                    <th>Age</th>
+                    <th>Salary $ k/m</th>
+                    <th>Gender</th>
+                    <th>Delete</th>
+                    <th>Edit</th>
+                </thead>
+                <tbody></tbody>
+        </table>
+
+    
+        <!--- Update row -->
+        <section hidden id="update_actor_row">
+
+        <label>Name of your favorite Actor of the Movie</label>
+        <input type="text" id="update_actor_name" placeholder="Actor Name...">
+        <br><br/>
+        <button type="submit" id="Up_Actor_Btn1">Update</button>
+        <br><br><br/>
+
+        <label>Actor's age</label>
+        <input type="text" id="update_actor_age" placeholder="Actor Age...">
+        <br><br/>
+        <button type="submit" id="Up_Actor_Btn2">Update</button>
+        <br><br><br/>
+
+        <label>Actor's Salary</label>
+        <input type="number" id="update_actor_salary" placeholder="Actor Salary...">
+        <br><br/>
+        <button type="submit" id="Up_Actor_Btn3">Update</button>
+        <br><br><br/>
+
+
+        <label>Gender</label>
+        <!--input type="text" id="actor's_gender" placeholder="Actor's Gender..."--->
+        <select id="update_actor_gender"  name="Act_gdr">
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="" selected>Select an option</option>
+        </select>
+        <br><br/>
+        </select>
+
+        <button type="submit" id="Up_Actor_Btn4">Update</button>
+    
+             </section>
+
+
+
+
+    </main>
+
+    <script src="./JS/clientscript4.js"></script>
+
+</body>
+
+
+</html>

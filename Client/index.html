@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Movie Database</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/Client/CSS/style.css" />
+</head>
+
+<header>
+    
+    <!---h1>Movie Data</h1--->
+
+</header>
+
+
+<nav>
+    <ul>
+        <li><a href="index.html">Movie</a></li>
+        <li><a href="author.html">Review</a></li>
+        <li><a href="studio.html">Studios</a></li>
+        <li><a href="actor.html">Actors</a></li>
+        <li><a href="fivequeries.html">SQL Queries</a></li>
+        
+    </ul>
+</nav>
+
+
+<body>
+
+    <main>
+
+        <h1 class="m_site_title">Movies</h1>
+        <br><br><br/>
+
+        <label>Movie's name</label>
+        <input type="text" id="movietitle" placeholder="Movietitle....">
+        <br><br/>
+
+        <label>Year</label>
+        <input type="number" id="year" placeholder="Year....">
+        <br><br/>
+
+        <label>Directors of Movie</label>
+        <input type="text" id="director" placeholder="Director....">
+        <br><br/>
+
+        <label>Length in minutes</label>
+        <input type="number" id="length" placeholder="Length....">
+        <br><br/>
+
+        <label>Genre</label>
+        <select id="MovieType" name="Type_of_Movie">
+        <option value="" selected>Select an option</option>
+        <option value="Romantic">Romantic</option>
+        <option value="Action">Action</option>
+        <option value="Comedy">Comedy</option>
+        <option value="Adventure">Adventure</option>
+        <option value="Animation">Animation</option>
+        <option value="Drama">Drama</option>
+        <option value="Sci-fi">Sci-fi</option>
+        <option value="Fantasy">Fantasy</option>
+        <option value="Horror">Horror</option>
+        </select>
+
+        <br><br/>
+
+        <label>Budget of Movies</label>
+        <input type="text" id="budget" placeholder="Budget....">
+        <br><br/>
+
+        <label>Gross</label>
+        <input type="text" id="gross" placeholder="Gross....">
+        <br><br/>
+
+        <button type="submit" id="SubmitAdd_1Btn">Add</button>
+
+        <br><br><br/>
+
+        
+
+         <h2 id="movie">Movie Table</h2>
+
+         <div>
+            <input placeholder="search by movietitle" id = "search_movie_input">
+            <button id="search_movie_btn">Search </button>
+        </div>
+
+
+        <table id="table">
+            <thead>
+                <th>ID</th>
+                <th>Movie title</th>
+                <th>Year</th>
+                <th>Director</th>
+                <th>Length</th>
+                <th>Genre</th>
+                <th>Budget $ M/B</th>
+                <th>Gross $ M/B</th>
+                <th>Delete</th>
+                <th>Edit</th>
+            </thead>
+            <tbody></tbody>
+        </table>
+
+
+        
+        <br><br><br/>
+
+       
+       
+       <!--- Update row -->
+       <section hidden id="update_movie_row"> 
+
+        <label>Movie's name</label>
+        <input type="text" id="update_movietitle" placeholder="Movietitle....">
+        <br/>
+        <button type="submit" id="update_row_btn0">Update</button>
+        <br><br><br/>
+
+        <label>Year</label>
+        <input type="number" id="update_year" placeholder="Year....">
+        <br/>
+        <button type="submit" id="update_row_btn1">Update</button>
+        <br><br><br/>
+
+        <label>Directors of Movie</label>
+        <input type="text" id="update_director" placeholder="Director....">
+        <br/>
+        <button type="submit" id="update_row_btn2">Update</button>
+        <br><br><br/>
+
+        <label>Length in minutes</label>
+        <input type="number" id="update_length" placeholder="Length....">
+        <br/>
+        <button type="submit" id="update_row_btn3">Update</button>
+        <br><br><br/>
+
+        <label>Genre</label>
+        <!--input type="text" id="genre" placeholder="Genre...."--->
+        <select id="update_MovieType" name="Type_of_Movie">
+        <option value="" selected>Select an option</option>
+        <option value="Romantic">Romantic</option>
+        <option value="Action">Action</option>
+        <option value="Comedy">Comedy</option>
+        <option value="Adventure">Adventure</option>
+        <option value="Animation">Animation</option>
+        <option value="Drama">Drama</option>
+        <option value="Sci-fi">Sci-fi</option>
+        <option value="Fantasy">Fantasy</option>
+        <option value="Horror">Horror</option>
+        </select>
+
+        <br/>
+        <button type="submit" id="update_row_btn4">Update</button>
+        <br><br><br/>
+
+
+        <label>Budget of Movies</label>
+        <input type="text" id="update_budget" placeholder="Budget....">
+        <br/>
+        <button type="submit" id="update_row_btn5">Update</button>
+        <br><br><br/>
+
+        <label>Gross</label>
+        <input type="text" id="update_gross" placeholder="Gross....">
+        <br/>
+        <button type="submit" id="update_row_btn6">Update</button>
+        <br><br><br/>
+
+
+        <!---button id="update_row_btn">Update</button--->
+
+        </section>
+
+        
+
+    </main>
+
+
+    <script src="./JS/clientscript.js"></script>
+    <!---script src="./JS/clientscript2.js"></script--->
+    <!---script src="./JS/clientscript3.js"></script---->
+    <!---script src="./JS/clientscript4.js"></script--->
+
+
+</body>
+
+
+
+</html>

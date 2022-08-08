@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Movie Database</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/Client/CSS/studio.css" />
+</head>
+
+<header class="std_site">
+
+    <!---h1 class="std_title">Studios</h1--->
+
+</header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Movie</a></li>
+        <li><a href="author.html">Review</a></li>
+        <li><a href="studio.html">Studios</a></li>
+        <li><a href="actor.html">Actors</a></li>
+        <li><a href="fivequeries.html">SQL Queries</a></li>
+    </ul>
+</nav>
+
+
+<body>
+
+    <main>
+
+        <h1 class="std_title">Studios</h1>
+        <br><br/>
+
+        <label>Movie's name</label>
+        <input type="text" id="lichi" placeholder="Movie name....">
+        <br><br/>
+
+        <label>Studios</label>
+        <input type="text" id="studio_name" placeholder="Studio Name...">
+        <br><br/>
+
+        <label>Managers of Studios</label>
+        <input type="text" id="studio_manager" placeholder="Studio Manager...">
+        <br><br/>
+
+        <button type="submit" id="Submit_StudioBtn">Add</button>
+
+        <br><br><br/>
+
+        <h2 id="studio">Studio Table</h2>
+
+        <br/>
+        <div>
+            <input placeholder="search by movietitle" id = "search_studio_input">
+            <button id="search_studio_btn">Search </button>
+        </div>
+
+        <table id="studio_table">
+            
+                <thead>
+                    <th>ID</th>
+                    <th>Movie title</th>
+                    <th>Studio</th>
+                    <th>Manager</th>
+                    <th>Delete</th>
+                    <th>Edit</th>
+                </thead>
+                <tbody></tbody>
+        </table>
+
+        <br><br><br/>
+
+        
+
+        <br><br><br/>
+
+
+        <!--- Update row -->
+        <section hidden id="update_studio_row">
+
+            <label>Movie's name</label>
+            <input type="text" id="update_movietitle" placeholder="Movietitle....">
+            <br/>
+            <button type="submit" id="Up0_Submit_StudioBtn">Update</button>
+            <br><br/>
+
+
+            <label>Studios</label>
+            <input type="text" id="update_studio_name" placeholder="Studio Name...">
+            <br/>
+
+            <button type="submit" id="Up1_Submit_StudioBtn">Update</button>
+            <br><br/>
+    
+            <label>Managers of Studios</label>
+            <input type="text" id="update_studio_manager" placeholder="Studio Manager...">
+            <br/>
+         
+             <button type="submit" id="Up2_Submit_StudioBtn">Update</button>
+    
+             </section>
+    
+
+
+    </main>
+
+    <script src="./JS/clientscript3.js"></script>
+
+</body>
+
+</html>
